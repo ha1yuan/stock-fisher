@@ -1,0 +1,11 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 其他常见忽略项（推荐一起添加）
+/target/
+*.log
+*.swp
+.DS_Store
