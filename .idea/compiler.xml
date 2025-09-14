@@ -9,15 +9,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="start" />
-        <module name="infra" />
-        <module name="service" />
-        <module name="domain" />
+        <module name="stock-fisher" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="app" target="1.8" />
+      <module name="stock-fisher-domain" target="1.8" />
+      <module name="stock-fisher-infra" target="1.8" />
+      <module name="stock-fisher-service" target="1.8" />
+      <module name="stock-fisher-start" target="1.8" />
       <module name="test" target="1.8" />
+      <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="stock-fisher" options="-parameters" />
+      <module name="stock-fisher-domain" options="-parameters" />
+      <module name="stock-fisher-infra" options="-parameters" />
+      <module name="stock-fisher-service" options="-parameters" />
+      <module name="stock-fisher-start" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+    </option>
   </component>
 </project>

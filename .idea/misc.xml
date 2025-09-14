@@ -10,7 +10,12 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/app/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-fisher-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-fisher-infra/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-fisher-service/pom.xml" />
+        <option value="$PROJECT_DIR$/stock-fisher-start/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
   </component>
