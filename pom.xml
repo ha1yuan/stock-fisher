@@ -4,28 +4,33 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- 基本项目信息 -->
-    <groupId>io.github.ha1yuan</groupId> <!-- 修改为你自己的组织ID -->
-    <artifactId>stock-fisher</artifactId> <!-- 修改为你的项目名 -->
+    <groupId>io.github.ha1yuan</groupId>
+    <artifactId>stock-fisher</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging> <!-- 或 war, pom 等 -->
+    <packaging>pom</packaging>
+    <modules>
+        <module>start</module>
+        <module>service</module>
+        <module>domain</module>
+        <module>infra</module>
+    </modules>
 
-    <!-- 指定 JDK 版本（可选但推荐） -->
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source> <!-- 根据你的JDK修改 -->
+        <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- 依赖管理 -->
-    <dependencies>
+    <dependencyManagement>
 
-        <dependency>
-            <groupId>io.github.longportapp</groupId>
-            <artifactId>openapi-sdk</artifactId>
-            <version>3.0.14</version>
-        </dependency>
-      
-    </dependencies>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.longportapp</groupId>
+                <artifactId>openapi-sdk</artifactId>
+                <version>3.0.14</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
 
 </project>
